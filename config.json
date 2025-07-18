@@ -1,0 +1,56 @@
+{
+    "database" : {
+        "bucket_size" : 8192,
+        "enzyme" : {
+            "missed_cleavages" : 2,
+            "min_len" : 5,
+            "max_len" : 50,
+            "cleave_at" : "KR",
+            "restrict" : "P",
+            "c_terminal" : true,
+            "semi_enzymatic" : false
+        },
+        "peptide_min_mass" : 500.0,
+        "peptide_max_mass" : 5000.0,
+        "ion_kinds" : [
+            "b",
+            "y"
+        ],
+        "min_ion_index" : 2,
+        "max_variable_mods" : 3,
+        "static_mods" : {},
+        "variable_mods" : {
+            "M" : [15.9949],
+            "[" : [42.0106]
+        },
+        "decoy_tag" : "rev_",
+        "generate_decoys" : true,
+        "fasta" : "C:/FragPipe/FragPipe-23.1/databases/2025-07-10-decoys-reviewed-isoforms-contam-UP000005640.fas"
+    },
+    "precursor_tol" : {"ppm" : [-20,20]},
+    "fragment_tol" : {"ppm" : [-10,10]}, 
+    "isotope_error" : [0,3],
+    "wide_window" : false,
+    "deisotope": true,
+    "min_peaks": 15,
+    "max_peaks": 150,
+    "min_matched_peaks": 4,
+    "max_fragment_charge": 2,
+    "quant" : {
+        "lfq" : false
+    },
+    "chimera" : false,
+    "report_psms" : 2,
+    "output_directory" : "D:/MG/SAGE/output/P46_3",
+    "mzml_paths" : [
+        "D:/MG/Data/P46_3.mzML"
+    ]
+}
+
+
+
+
+
+
+
+
